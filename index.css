@@ -1,0 +1,151 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  height: 6rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.logo {
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-weight: 500;
+  background-image: url("logo.png");
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+}
+
+.menu {
+  flex: 2;
+  background-image: url("container_bg.jpg");
+  z-index: -1;
+}
+
+.menu-item {
+  width: 8rem;
+  height: 8rem;
+  border: none;
+  color: white;
+  background: #00a8ff;
+  border-radius: 0.6rem;
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+  align-content: space-between;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+
+}
+
+.menu-item-name {
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.menu-item-price {
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-line {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 4rem 2rem 4rem;
+}
+
+.calculator {
+  flex: 1;
+  position: relative;
+  width: 100%;
+}
+
+.cal-items {
+  height: 4rem;
+}
+
+.cal-item {
+  display: flex;
+  height: 4rem;
+  padding: 0 1rem 0 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.cal-item:hover {
+  background: rgba(220, 221, 225, 0.3);
+  color: black;
+}
+
+.cal-item .name {
+  flex: 1;
+}
+
+.cal-item .count {
+  width: 2rem;
+}
+
+.price {
+  width: 3rem;
+  padding-right: 1rem;
+}
+
+.cal-item .delete {
+  color: #ee5253;
+  border: 1px solid #ee5253;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.cal-item .delete:hover {
+  color: white;
+  background: #ee5253;
+}
+
+.total {
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  position: absolute;
+}
+
+.total .text {
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00a8ff;
+  color: white;
+  font-weight: 600;
+}
+
+.total .number {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+}
