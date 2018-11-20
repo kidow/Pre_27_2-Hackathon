@@ -30,7 +30,13 @@ body {
 .menu {
   flex: 2;
   background-image: url("container_bg.jpg");
-  z-index: -1;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  margin: 4rem;
 }
 
 .menu-item {
@@ -38,15 +44,20 @@ body {
   height: 8rem;
   border: none;
   color: white;
-  background: #00a8ff;
+  background: rgba(0,168,255, 0.85);
   border-radius: 0.6rem;
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+  box-shadow: 0 5px rgba(153,153,153, 0.5);
   align-content: space-between;
   cursor: pointer;
 }
 
 .menu-item:hover {
+  background: rgb(0,168,255)
+}
 
+.menu-item:active {
+  box-shadow: 0 0;
+  transform: translateY(4px)
 }
 
 .menu-item-name {
@@ -82,7 +93,7 @@ body {
 
 .cal-item {
   display: flex;
-  height: 4rem;
+  height: 2rem;
   padding: 0 1rem 0 1rem;
   align-items: center;
   justify-content: center;
