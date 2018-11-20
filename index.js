@@ -87,7 +87,3 @@ function delDiv() {
             return ordered.map((element)=>element.price).reduce((acc, curr)=>acc+curr)
         }
 }
-
-
-
-
